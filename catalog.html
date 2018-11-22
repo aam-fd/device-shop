@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Каталог</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-navigation">
+        <a class="logo header-logo">
+          <img src="#" alt="Логотип магазина Device">
+        </a>
+        <div>
+          <p class="search">Поиск по сайту</p> <!-- form, input -->
+          <a href="catalog.html" class="catalog"><h2>Каталог товаров</h2></a>
+        </div>
+        <div>
+          <ul class="user-navigation">
+            <li class="user-navigation__item user-navigation__item_header"><a href="#">Валентин Петухов</a></li>
+            <li class="user-navigation__item user-navigation__item_header"><a href="#">Выйти</a></li>
+            <li class="user-navigation__item user-navigation__item_header"><a href="#">Сравнить</a></li>
+            <li class="user-navigation__item user-navigation__item_header"><a href="#">Корзина</a></li>
+          </ul>
+          <ul class="service-navigation">
+            <li class="service-navigation__item service-navigation__item_header"><a href="#" class="service-navigation__link"><h2>Доставка</h2></a></li>
+            <li class="service-navigation__item service-navigation__item_header"><a href="#" class="service-navigation__link"><h2>Гарантия</h2></a></li>
+            <li class="service-navigation__item service-navigation__item_header"><a href="#" class="service-navigation__link"><h2>Контакты</h2></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Моноподы для селфи</h1>
+
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
+      </ul>
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр</h2>>
+        <!-- Фильтр -->
+
+        <form>
+          <!-- Стоимость -->
+
+          <h3>Цвет</h3>
+          <input type="checkbox" name="color" value="black" id="color-black">
+          <label for="color-black">Черный</label>
+          <input type="checkbox" name="color" value="white" id="color-white">
+          <label for="color-white">Белый</label>
+          <input type="checkbox" name="color" value="blue" id="color-blue">
+          <label for="color-blue">Синий</label>
+          <input type="checkbox" name="color" value="red" id="color-red">
+          <label for="color-red">Красный</label>
+          <input type="checkbox" name="color" value="pink" id="color-pink">
+          <label for="color-pink">Розовый</label>
+
+          <h3>Bluetooth</h3>
+          <input type="radio" name="bluetooth" value="true" id="have-bluetooth">
+          <label for="have-bluetooth">Есть</label>
+          <input type="radio" name="bluetooth" value="false" id="no-bluetooth">
+          <label for="no-bluetooth">Нет</label>
+
+          <button class="button" type="submit">Показать</button>
+        </form>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Сортировка</h2>>
+        <!-- Сортировка -->
+
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-item__title">Любительская селфи-палка</span>
+              </h3>
+              <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
+              <p class="catalog-item__price">500 руб.</p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-item__title">Профессиональная селфи-палка</span>
+              </h3>
+              <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
+              <p class="catalog-item__price">1500 руб.</p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-item__title">Непотопляемая селфи-палка</span>
+              </h3>
+              <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
+              <p class="catalog-item__price">2500 руб.</p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="catalog-item.html">
+              <h3>
+                <span class="catalog-item__title">Селфи-палка «Следуй за мной»</span>
+              </h3>
+              <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
+              <p class="catalog-item__price">4900 руб.</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- paginator -->
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="logo footer-logo">
+            <img src="#" alt="Логотип магазина Device">
+        </a>
+        <p>г. Москва, ул. Строителей, 15</p>
+      </div>
+      <div>
+        <ul class="service-navigation">
+          <li class="service-navigation__item service-navigation__item_footer"><a href="#" class="service-navigation__link"><h2>Доставка</h2></a></li>
+          <li class="service-navigation__item service-navigation__item_footer"><a href="#" class="service-navigation__link"><h2>Гарантия</h2></a></li>
+          <li class="service-navigation__item service-navigation__item_footer"><a href="#" class="service-navigation__link"><h2>Контакты</h2></a></li>
+        </ul>
+        <ul class="footer-social">
+          <li><a class="footer-social__link footer-social__facebook" href="#">Facebook</a></li>
+          <li><a class="footer-social__link footer-social__instagram" href="#">Instagram</a></li>
+          <li><a class="footer-social__link footer-social__twitter" href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="user-navigation">
+          <li class="user-navigation__item user-navigation__item_footer"><a href="#">Валентин Петухов</a></li>
+          <li class="user-navigation__item user-navigation__item_footer"><a href="#">Выйти</a></li>
+          <li class="user-navigation__item user-navigation__item_footer"><a href="#">Сравнить</a></li>
+          <li class="user-navigation__item user-navigation__item_footer"><a href="#">Корзина</a></li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+        <a href="https://htmlacademy.ru" class="htmlacademy-logo">
+          <img src="#" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
+    
+  </body>
+</html>
