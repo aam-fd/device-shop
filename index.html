@@ -7,10 +7,10 @@
     <title>Device</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="header">
       <nav class="main-navigation">
-        <a class="logo main-header-logo">
-          <img src="#" width="" height="" alt="Логотип магазина Device">
+        <a class="logo header-logo">
+          <img src="#" alt="Логотип магазина Device">
         </a>
         <div>
           <p class="search">Поиск по сайту</p> <!-- input -->
@@ -18,15 +18,15 @@
         </div>
         <div>
           <ul class="user-navigation">
-            <li class="login"><a href="#">Войти</a></li>
-            <li class="logout visually-hidden"><a href="#">Выйти</a></li>
-            <li class="compare"><a href="#">Сравнить</a></li>
-            <li class="basket"><a href="#">Корзина</a></li>
+            <li class="user-navigation__item user-navigation__item_header"><a href="#">Войти</a></li>
+            <li class="user-navigation__item user-navigation__item_header visually-hidden"><a href="#">Выйти</a></li>
+            <li class="user-navigation__item user-navigation__item_header"><a href="#">Сравнить</a></li>
+            <li class="user-navigation__item user-navigation__item_header"><a href="#">Корзина</a></li>
           </ul>
           <ul class="service-navigation">
-            <li><a href="#"><h2>Доставка</h2></a></li>
-            <li><a href="#"><h2>Гарантия</h2></a></li>
-            <li><a href="#"><h2>Контакты</h2></a></li>
+            <li class="service-navigation__item service-navigation__item_header"><a href="#" class="service-navigation__link"><h2>Доставка</h2></a></li>
+            <li class="service-navigation__item service-navigation__item_header"><a href="#" class="service-navigation__link"><h2>Гарантия</h2></a></li>
+            <li class="service-navigation__item service-navigation__item_header"><a href="#" class="service-navigation__link"><h2>Контакты</h2></a></li>
           </ul>
         </div>
       </nav>
@@ -41,10 +41,10 @@
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+        <ul class="partners">
+          <li class="partners__item">Деловые Линии</li>
+          <li class="partners__item">Автотрейдинг</li>
+          <li class="partners__item">ЖелДорЭкспедиция</li>
         </ul>
         <p class="button">Подробнее о нас</p>
       </section>
@@ -58,20 +58,20 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer">
       <div>
-        <a class="logo main-footer-logo">
-            <img src="#" width="" height="" alt="Логотип магазина Device">
+        <a class="logo footer-logo">
+            <img src="#" alt="Логотип магазина Device">
         </a>
         <p>г. Москва, ул. Строителей, 15</p>
       </div>
       <div>
         <ul class="service-navigation">
-          <li><a href="#"><h2>Доставка</h2></a></li>
-          <li><a href="#"><h2>Гарантия</h2></a></li>
-          <li><a href="#"><h2>Контакты</h2></a></li>
+          <li class="service-navigation__item service-navigation__item_footer"><a href="#" class="service-navigation__link"><h2>Доставка</h2></a></li>
+          <li class="service-navigation__item service-navigation__item_footer"><a href="#" class="service-navigation__link"><h2>Гарантия</h2></a></li>
+          <li class="service-navigation__item service-navigation__item_footer"><a href="#" class="service-navigation__link"><h2>Контакты</h2></a></li>
         </ul>
-        <ul class="main-footer-social">
+        <ul class="footer-social">
           <li><a class="social social-facebook" href="#">Facebook</a></li>
           <li><a class="social social-instagram" href="#">Instagram</a></li>
           <li><a class="social social-twitter" href="#">Twitter</a></li>
@@ -79,14 +79,14 @@
       </div>
       <div>
         <ul class="user-navigation">
-          <li class="login"><a href="#">Войти</a></li>
-          <li class="logout visually-hidden"><a href="#">Выйти</a></li>
-          <li class="compare"><a href="#">Сравнить</a></li>
-          <li class="basket"><a href="#">Корзина</a></li>
+          <li class="user-navigation__item user-navigation__item_footer"><a href="#">Войти</a></li>
+          <li class="user-navigation__item user-navigation__item_footer visually-hidden"><a href="#">Выйти</a></li>
+          <li class="user-navigation__item user-navigation__item_footer"><a href="#">Сравнить</a></li>
+          <li class="user-navigation__item user-navigation__item_footer"><a href="#">Корзина</a></li>
         </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
-        <a href="" class="htmlacademy-logo">
-          <img src="#" width="" height="" alt="Логотип HTML Academy">
+        <a href="https://htmlacademy.ru" class="htmlacademy-logo">
+          <img src="#" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
