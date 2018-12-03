@@ -41,80 +41,102 @@
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
 
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр</h2>>
-        <!-- Фильтр -->
-
+      <section class="filter">
         <form>
-          <!-- Стоимость -->
+          <h2>Фильтр:</h2>
 
-          <h3>Цвет</h3>
-          <input type="checkbox" name="color" value="black" id="color-black">
-          <label for="color-black">Черный</label>
-          <input type="checkbox" name="color" value="white" id="color-white">
-          <label for="color-white">Белый</label>
-          <input type="checkbox" name="color" value="blue" id="color-blue">
-          <label for="color-blue">Синий</label>
-          <input type="checkbox" name="color" value="red" id="color-red">
-          <label for="color-red">Красный</label>
-          <input type="checkbox" name="color" value="pink" id="color-pink">
-          <label for="color-pink">Розовый</label>
-
-          <h3>Bluetooth</h3>
-          <input type="radio" name="bluetooth" value="true" id="have-bluetooth">
-          <label for="have-bluetooth">Есть</label>
-          <input type="radio" name="bluetooth" value="false" id="no-bluetooth">
-          <label for="no-bluetooth">Нет</label>
-
+          <div class="filter-section">
+            <h3>Стоимость</h3>
+            <input type="range">
+          </div>
+          <div class="filter-section">
+            <h3>Цвет</h3>
+            <input type="checkbox" name="color" value="black" id="color-black">
+            <label for="color-black">Черный</label>
+            <input type="checkbox" name="color" value="white" id="color-white">
+            <label for="color-white">Белый</label>
+            <input type="checkbox" name="color" value="blue" id="color-blue">
+            <label for="color-blue">Синий</label>
+            <input type="checkbox" name="color" value="red" id="color-red">
+            <label for="color-red">Красный</label>
+            <input type="checkbox" name="color" value="pink" id="color-pink">
+            <label for="color-pink">Розовый</label>
+          </div>
+          <div class="filter-section">
+            <h3>Bluetooth</h3>
+            <input type="radio" name="bluetooth" value="true" id="have-bluetooth">
+            <label for="have-bluetooth">Есть</label>
+            <input type="radio" name="bluetooth" value="false" id="no-bluetooth">
+            <label for="no-bluetooth">Нет</label>
+          </div>
           <button class="button" type="submit">Показать</button>
         </form>
       </section>
 
-      <section>
-        <h2 class="visually-hidden">Сортировка</h2>>
-        <!-- Сортировка -->
-
-        <ul class="catalog-list">
-          <li class="catalog-list__item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-list__title">Любительская селфи-палка</span>
-              </h3>
-              <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
-              <p class="catalog-list__price">500 руб.</p>
-            </a>
-          </li>
-          <li class="catalog-list__item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-list__title">Профессиональная селфи-палка</span>
-              </h3>
-              <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
-              <p class="catalog-list__price">1500 руб.</p>
-            </a>
-          </li>
-          <li class="catalog-list__item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-list__title">Непотопляемая селфи-палка</span>
-              </h3>
-              <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
-              <p class="catalog-list__price">2500 руб.</p>
-            </a>
-          </li>
-          <li class="catalog-list__item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-list__title">Селфи-палка «Следуй за мной»</span>
-              </h3>
-              <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
-              <p class="catalog-list__price">4900 руб.</p>
-            </a>
-          </li>
-        </ul>
+      <section class="sort">
+        <div class="sort-category">
+          <h2>Сортировка</h2>
+          <ul class="sort-category__item">
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По популярности</li>
+          </ul>
+          <ul class="sort-category__item">
+            <li>По убыванию</li>
+            <li>По возрастанию</li>
+          </ul>
+        </div>
+        <div class="sort-result">
+          <ul class="catalog-list">
+            <li class="catalog-list__item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-list__title">Любительская селфи-палка</span>
+                </h3>
+                <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
+                <p class="catalog-list__price">500 руб.</p>
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-list__title">Профессиональная селфи-палка</span>
+                </h3>
+                <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
+                <p class="catalog-list__price">1500 руб.</p>
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-list__title">Непотопляемая селфи-палка</span>
+                </h3>
+                <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
+                <p class="catalog-list__price">2500 руб.</p>
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-list__title">Селфи-палка «Следуй за мной»</span>
+                </h3>
+                <img src="http://placehold.it/150x100" alt="Любительская селфи-палка">
+                <p class="catalog-list__price">4900 руб.</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <!-- paginator -->
+      <section class="paginator">
+        <a class="paginator__item">Назад</a>
+        <ul class="paginator__item">
+          <li><a>1</a></li>
+          <li><a>2</a></li>
+          <li><a>3</a></li>
+        </ul>
+        <a class="paginator__item">Вперед</a>
+      </section>
     </main>
 
     <footer class="footer">
